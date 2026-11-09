@@ -5,7 +5,7 @@
 
 [English](context.md) | 中文
 
-上下文是 Cordis 的核心对象：所有服务、事件和生命周期 API 都通过 `ctx` 访问。事件方法见[事件](events.md)，副作用与当前 fiber 见 [Fiber](fiber.md)，插件加载见[注册表](registry.md)。
+上下文是 Cordis 的核心对象：所有服务、事件和生命周期 API 都通过 `ctx` 访问。事件方法见[事件](events.zh.md)，副作用与当前 fiber 见 [Fiber](fiber.zh.md)，插件加载见[注册表](registry.zh.md)。
 
 Cordis 插件的根依赖容器和子依赖容器。
 
@@ -112,7 +112,7 @@ root: this
 
 ```ts cordis-catalog
 /** Base URL used to resolve relative plugin/module specifiers, if the runtime sets one. */
-baseUrl?: string
+baseUrl?: string | undefined
 ```
 
 用于解析相对插件／模块说明符的基础 URL，前提是运行时设置了该值。
